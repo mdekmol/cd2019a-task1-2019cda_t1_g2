@@ -1,0 +1,1 @@
+var tipuesearch = {"pages": [{'title': '簡介', 'text': '產品協同設計課程第二組 \n 倉儲位置 \n', 'tags': '', 'url': '簡介.html'}, {'title': 'Task-1', 'text': 'Web', 'tags': '', 'url': 'Task-1.html'}]};
