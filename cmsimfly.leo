@@ -64,8 +64,8 @@
 <v t="amd.20160714230058.1"><vh>@clean wsgi.py</vh>
 <v t="amd.20160714230122.1"><vh>wsgi declarations</vh></v>
 </v>
-<v t="amd.20160714230833.1"><vh>編輯 flaskapp.py</vh>
-<v t="amd.20160714230833.2"><vh>@clean flaskapp.py</vh>
+<v t="amd.20160714230833.1" a="E"><vh>編輯 flaskapp.py</vh>
+<v t="amd.20160714230833.2" a="E"><vh>@clean flaskapp.py</vh>
 <v t="amd.20160714230833.3"><vh>&lt;&lt;declarations&gt;&gt;</vh></v>
 <v t="amd.20160714230833.4"><vh>&lt;&lt;registers&gt;&gt;</vh></v>
 <v t="amd.20160714233131.1"><vh>checkLogin</vh></v>
@@ -2470,7 +2470,7 @@ window.location= 'https://' + location.host + location.pathname + location.searc
 &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="sitemap.html"&gt;Site Map&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="./../reveal/index.html"&gt;reveal&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="./../blog/index.html"&gt;blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://cda2019g2.blogspot.com/"&gt;blog&lt;/a&gt;&lt;/li&gt;
 '''
     outstring += '''
 &lt;/ul&gt;
