@@ -77,7 +77,11 @@
 <p><img alt="" src="https://127.0.0.1:8443/images/Task1-1-2.png"/><img alt="" height="506" src="/images/Task1-1-2.png" width="496"/></p>
 <p>執行.txt檔後分出的組別排序 , 意想不到的是竟然可以讀取中文檔名的文件<img alt="" src="https://127.0.0.1:8443/images/Task1-1-3.png"/></p>
 <p><img alt="" height="503" src="/images/Task1-1-3.png" width="504"/></p>
-<h2>分組程式修正</h2>
+<h3>Combine1.1&amp;1.2</h3>
+<p>測試結合 <a href="https://mdecadp2018.github.io/site-40623130/content/%E9%9A%A8%E6%A9%9F%E5%88%86%E7%B5%84%E4%BB%8B%E9%9D%A2%E6%88%90%E5%93%81.html">項目一</a>以及<a href="https://mdekmol.github.io/cd2019a-task1-2019cda_t1_g2/content/%E5%88%86%E7%B5%84%E7%A8%8B%E5%BC%8F%E4%BF%AE%E6%AD%A3.html">項目二</a> , 其結果是只顯示出組長</p>
+<p><img alt="" height="686" src="/images/task1-combine1&amp;2.png" width="825"/></p>
+<p>問題 : </p>
+<p>eric6底下出現 " Qt: Untested Windows version 10.0 detected! " 此 <a href="https://stackoverflow.com/questions/32966226/how-solve-qt-untested-windows-version-10-0-detected/52031328">連結</a> 或許能改善 , 還在測試</p><h2>分組程式修正</h2>
 <p>在利用亂數分組, 能否根據已經完成的主程式, 編寫一個網際程式或單機 PyQt5 程式, 讀進相關資料檔案後, 在瀏覽器或 PYQt5 程式中顯示出結果.</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import random
 filename = 'cdbw3_student_list.txt'
@@ -115,7 +119,41 @@ for i in range(len(read_data)):
 # c2019 為該班分組後所得分組數列
 print(c2019)</pre>
 <p>原始程式只有將檔案cdbw3_student_list.txt讀進Python程式中做亂數分組</p>
-<p></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import random
+filename = 'cdbw3_student_list.txt'
+# 每組人數
+num_in_one_group = 8
+# 組序由 1 開始
+group = 1
+# 各班分組後所得數列
+c2019 = []
+with open(filename) as f:
+    # 讀進全部檔案, 轉進數列, 並同時將各行的 \n 去除
+    read_data = f.read().splitlines() 
+print("共有 " + str(len(read_data)) + " 位學員")
+# 利用 shuffle 將數列隨機弄亂
+random.shuffle(read_data)
+for i in range(len(read_data)):
+    # 利用整數相除的餘數進行分組
+    if i%num_in_one_group == 0:
+        # 列出分隔符號
+        print("-"*20)
+        print("group " + str(group) +":")
+        # 在分組區隔時重置各組學員數列
+        group_list = []
+        print()
+        # 同時列出與分隔標註對應 i 的數列內容
+        group_list.append(read_data[i])
+        group = group + 1
+        print("Leader:"+read_data[i])
+    else:
+        print("Member:"+read_data[i])
+    if i%num_in_one_group == 0:
+        c2019.append(group_list)
+# c2019 為該班分組後所得分組數列
+
+print("Group_leader"+str(c2019))</pre>
+<p><br/><br/></p>
 <p>在i 迴圈當中加入if i %num_in_one_group == 0: 檢驗ｉ除上組員數量是否=0</p>
 <p>假設等於0    (整除無餘數)</p>
 <p>print("Leder:"+read_data[i])組長應是第一位選出來(read_data[i])</p>
