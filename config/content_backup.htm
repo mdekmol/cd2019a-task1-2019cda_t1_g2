@@ -11,7 +11,7 @@
 <p><a href="https://mdecadp2018.github.io/site-40623130/content/%7B%E5%A4%A7%E4%BA%8C%E4%B8%8B%7D%E7%AD%86%E8%A8%98%E5%8F%8A%E5%BF%83%E5%BE%97.html">陳鉅忠-40623130</a>  <a href="https://mdecadp2018.github.io/site-40623130/content/%7B%E5%A4%A7%E4%BA%8C%E4%B8%8B%7D%E7%AD%86%E8%A8%98%E5%8F%8A%E5%BF%83%E5%BE%97.html">心得</a></p>
 <p>蕭家翰-40623133 <span>心得</span></p>
 <p><span><a href="https://mdecadp2018.github.io/site-40623139/content/%E7%B0%A1%E4%BB%8B.html">許高惟-40623139 </a> <a href="https://mdecadp2018.github.io/site-40623139/content/%E7%AC%AC%E4%B8%80%E5%91%A8.html">心得</a><a href="https://mdecadp2018.github.io/site-40623139/content/%E7%B0%A1%E4%BB%8B.html"></a></span></p>
-<p><span>郭益綸-</span>40623142 <span>心得</span></p>
+<p><a href="https://mdecadp2018.github.io/site-40623142/content/index.html"><span>郭益綸-</span>40623142</a> <span>心得</span></p>
 <p><a href="https://mdecadp2018.github.io/site-40623145/content/index.html"><span>林暉恩-</span>40623145</a> <a href="https://mdecadp2018.github.io/site-40623145/content/%E6%AF%8F%E9%80%B1%E5%BF%83%E5%BE%97.html">心得</a></p>
 <p><span>  劉 奇  -40623146 心得</span></p>
 <h1>Task-1</h1>
@@ -59,7 +59,7 @@
 <p>陳鉅忠-40623130 <a href="https://youtu.be/82j82jvYnf4"><span> 影片</span><span>(聲音偏小</span></a></p>
 <p>蕭家翰-40623133<span> <a href="https://www.youtube.com/watch?v=220lGC7McfM&amp;t=54s">影片</a></span></p>
 <p>許高惟-40623139<span> </span><span>影片</span></p>
-<p><span>郭益綸-</span>40623142<span> </span><span>影片</span></p>
+<p><span>郭益綸-</span>40623142<span> <a href="https://www.youtube.com/watch?v=9MoXs8KSGCc&amp;feature=youtu.be">影片</a></span></p>
 <p><span>林暉恩-</span>40623145<span> <a href="https://youtu.be/w9eDGmawfNg">影片</a></span></p>
 <p><span>  劉 奇  -40623146 <span>影片</span></span></p>
 <h2>隨機分組介面成品</h2>
@@ -87,7 +87,13 @@
 <p><a href="https://mdecadp2018.github.io/site-40623130/content/%E9%9A%A8%E6%A9%9F%E5%88%86%E7%B5%84%E4%BB%8B%E9%9D%A2%E6%88%90%E5%93%81.html">完成啦</a>- 69MB左右。</p>
 <p>完全沒想到轉成exe檔會大成這樣...</p>
 <p>不過上星期到這次改版差了很多,不但整合了項目一與二 , 還修改了save as 按鈕(可用) , 還轉成了exe檔...很難想像因為一個enter換行導致一串的bug , 不過還是成功修改好了。</p>
-<p><span>改版Save as 按鈕成可用code , 並可直接存成.txt檔案</span><br/><img caption="false" height="442" src="https://mdecadp2018.github.io/site-40623130/images/save.png" width="500"/><br/><span>之後利用</span><a href="https://www.pyinstaller.org/downloads.html"><strong>pyinstaller(官方下載說明頁面)</strong></a><span>測試看看能否轉py成exe檔案 , 但是明顯的出了幾個bug</span><br/><span>(1) cffi 過舊或是未安裝 ---&gt;需更新檔案----&gt;pip cffi 就可以了     ( 沒記錯的話</span><br/><span>(2)接下來是下方這個 , 黑窗表示 : 語法錯誤</span><br/><img caption="false" height="520" src="https://mdecadp2018.github.io/site-40623130/images/error.png" width="1000"/><br/><span>上網查後發現是下方這個.py檔的198行的空白行的問題...</span><br/><img caption="false" height="656" src="https://mdecadp2018.github.io/site-40623130/images/advapi32-1.png" width="500"/><br/><span>刪除開白行即可</span><br/><img caption="false" height="658" src="https://mdecadp2018.github.io/site-40623130/images/advapi32-2.png" width="500"/><br/><span>之後就可正常用行囉 , pyinstaller會生成很多檔案而主要的exe檔在dist資料夾中</span><br/><img caption="false" height="330" src="https://mdecadp2018.github.io/site-40623130/images/fix.png" width="1000"/><br/><span>之後到要轉檔的目錄位置打</span><br/><span>pyinstaller -F -w -i 圖.ico 主程式.py -p 其餘程式 -p 其餘程式  -p 其餘程式  -p 其餘程式 </span></p>
+<p><span>改版Save as 按鈕成可用code , 並可直接存成.txt檔案</span><br/><img alt="" height="444" src="/images/save.png" width="500"/><br/><span>之後利用</span><a href="https://www.pyinstaller.org/downloads.html"><strong>pyinstaller(官方下載說明頁面)</strong></a><span>測試看看能否轉py成exe檔案 , 但是明顯的出了幾個bug</span><br/><span>(1) cffi 過舊或是未安裝 ---&gt;需更新檔案----&gt;pip cffi 就可以了     ( 沒記錯的話</span><br/><span>(2)接下來是下方這個 , 黑窗表示 : 語法錯誤</span><br/><span></span></p>
+<p><span><img caption="false" height="485" src="/images/error.png" width="933"/></span></p>
+<p><span>上網查後發現是下方這個.py檔的198行的空白行的問題...</span></p>
+<p><img alt="" height="655" src="/images/advapi32-1.png" width="500"/><br/><span>刪除開白行即可</span><br/><img alt="" height="658" src="/images/advapi32-2.png" width="500"/></p>
+<p><span>之後就可正常用行囉 , pyinstaller會生成很多檔案而主要的exe檔在dist資料夾中</span></p>
+<p><span><img alt="" height="330" src="/images/fix.png" width="1000"/></span></p>
+<p><span>之後到要轉檔的目錄位置打</span><br/><span>pyinstaller -F -w -i 圖.ico 主程式.py -p 其餘程式 -p 其餘程式  -p 其餘程式  -p 其餘程式 </span></p>
 <div class="graf graf--h4 graf-after--pre" id="31fc" name="31fc">以下為pyinstaller常用參數介紹</div>
 <ol class="postList">
 <li class="graf graf--li graf-after--h4" id="3682" name="3682">pyinstaller -h 來查看參數</li>
@@ -97,7 +103,9 @@
 <li class="graf graf--li graf-after--li" id="6abd" name="6abd">-c : 使用控制台，無視窗</li>
 <li class="graf graf--li graf-after--li" id="44bc" name="44bc">-D : 創建一個目錄，包含exe以及其他一些依賴性文件</li>
 </ol>
-<p><img caption="false" height="672" src="https://mdecadp2018.github.io/site-40623130/images/finish.png" width="1000"/><br/><br/><span>完成品~</span><br/><img caption="false" height="638" src="https://mdecadp2018.github.io/site-40623130/images/team-divider-finil-finish.png" width="1000"/></p><h2>分組程式修正</h2>
+<p><img alt="" height="657" src="/images/finish.png" width="976"/></p>
+<p>完成品~</p>
+<p><img alt="" height="639" src="/images/team-divider-finil-finish.png" width="1000"/></p><h2>分組程式修正</h2>
 <p>在利用亂數分組, 能否根據已經完成的主程式, 編寫一個網際程式或單機 PyQt5 程式, 讀進相關資料檔案後, 在瀏覽器或 PYQt5 程式中顯示出結果.</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import random
 filename = 'cdbw3_student_list.txt'
