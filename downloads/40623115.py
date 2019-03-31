@@ -17,7 +17,7 @@ for i in range(len(read_data)):
     if i%num_in_one_group == 0:
         # 列出分隔符號
         print("-"*20)
-        print("group " + str(group) +":")
+        print("group " + str(group) +" :")
         # 在分組區隔時重置各組學員數列
         group_list = []
         print()
@@ -27,6 +27,7 @@ for i in range(len(read_data)):
         print("Leader:"+read_data[i])
     else:
         print("Member:"+read_data[i])
+        
     if i%num_in_one_group == 0:
         c2019.append(group_list)
 # c2019 為該班分組後所得分組數列
