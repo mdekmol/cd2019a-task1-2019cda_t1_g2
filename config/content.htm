@@ -7,26 +7,29 @@
 <p>專案執行過程規劃</p>
 <p>專案執行內容</p>
 <p>專案結論</p>
-<table style="width: 527px; border-color: #f73131; height: 204px; background-color: #58f5e0; float: left;"><caption><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">工作分配</span></span></span></caption>
+<p>-------------------------------------</p>
+<p>工作分配 : </p>
+<table style="width: 531px;">
 <tbody>
-<tr style="height: 51px;">
-<td style="width: 184px; height: 51px; border-color: #000000;">圖形修改</td>
-<td style="width: 184px; height: 51px; border-color: #000000;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">40623133,40623142,40623145,40623146</span></span></span></span></span></span></span></span></td>
+<tr style="height: 66px;">
+<td style="width: 172px; height: 66px;"><span>圖形修改&amp;結構設計</span></td>
+<td style="width: 357px; height: 66px;">40623133 : 40623142 : 40623145 : 40623146 : 40423218</td>
 </tr>
 <tr style="height: 51px;">
-<td style="width: 184px; height: 51px; border-color: #000000;">程式編輯</td>
-<td style="width: 184px; height: 51px; border-color: #000000;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">40623130,40623139,40423218（球發送機制）</span></span></span></span></td>
+<td style="width: 172px; height: 51px;">程式編輯</td>
+<td style="width: 357px; height: 51px;">40623130 : 40623139</td>
 </tr>
 <tr style="height: 51px;">
-<td style="width: 184px; height: 51px; border-color: #000000;">V-rep 簡化</td>
-<td style="width: 184px; height: 51px; border-color: #000000;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">40623115,40423136</span></span></span></span></span></span></span></span></td>
+<td style="width: 172px; height: 51px;">V-rep簡化</td>
+<td style="width: 357px; height: 51px;">40623115 : 40423136</td>
 </tr>
 <tr style="height: 51px;">
-<td style="width: 184px; height: 51px; border-color: #000000;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">專案報告書</span></span></span></span></span></span></span></span></td>
-<td style="width: 184px; height: 51px; border-color: #000000;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">所有</span></span></span></span></span></span></span></span></td>
+<td style="width: 172px; height: 51px;">報告書</td>
+<td style="width: 357px; height: 51px;">共同編輯</td>
 </tr>
 </tbody>
-</table><h1>零組件尺寸分析</h1>
+</table>
+<h1>零組件尺寸分析</h1>
 <p>手足球系統的零組件尺寸分析 (可行性分析)</p>
 <h1>參數設計與繪圖</h1>
 <p>手足球系統的零組件參數設計與繪圖 (零組件初步設計繪圖)</p>
@@ -536,8 +539,7 @@ end </pre>
 <p><span>林暉恩-</span>40623145<span> : </span></p>
 <p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/XM1a_FBw4Bw" width="560"></iframe></span></p>
 <p><span>  </span><span>劉 奇  -40623146 : </span></p>
-<h2>Task-3</h2>
-<h3>Virtualbox虛擬主機網路設定</h3>
+<h2>Virtualbox虛擬主機網路設定</h2>
 <p>Step1：前往<a href="https://drive.google.com/file/d/1bSBdEPVn6IG22cVLpTbY97JY16vjlatz/view?usp=sharing">雲端載點</a>將檔案UB1804下載下來。</p>
 <p>Step2：開啟Oracle VM VirtualBox Manager。</p>
 <p>Step3：點擊右方視窗中的"NEW"按鈕來新增虛擬主機(名稱可隨意)，按下NEXT。</p>
@@ -559,3 +561,25 @@ end </pre>
 <p>Step17：輸入sudo survice cmsimfly restart重新啟動。</p>
 <p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">影片如下：</span></span></p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/787PgHBeQGE" width="560"></iframe></p>
+<h2>換行code 改寫</h2>
+<p>圖中寫到 : 因html中可能還有中文字元在尚未喘成unf8時會出現語法錯誤 , 所以轉成unf8換完行後再轉回原本的字元</p>
+<p>如右邊所呈現有成功換行</p>
+<p><img alt="" height="543" src="/images/改字串等級code更改說明.png" width="1000"/></p>
+<p>code:</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># encoding=utf8
+import re
+
+rep = {"h1": "h2", "h2": "h3", "h3": "h4"} # define desired replacements here
+
+# use these three lines to do the replacement
+rep = dict((re.escape(k), v) for k, v in rep.items())
+pattern = re.compile("|".join(rep.keys()))
+
+#text = pattern.sub(lambda m: rep[re.escape(m.group(0))], text),editing by 40623130
+
+result = pattern.sub(lambda m: rep[re.escape(m.group(0))],"""
+
+""")
+
+print(result)</pre>
+<p></p>
