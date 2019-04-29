@@ -7,28 +7,26 @@
 <p>專案執行過程規劃</p>
 <p>專案執行內容</p>
 <p>專案結論</p>
-<p>工作分配:</p>
-<table style="width: 531px;">
+<table style="width: 527px; border-color: #f73131; height: 204px; background-color: #58f5e0; float: left;"><caption><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">工作分配</span></span></span></caption>
 <tbody>
-<tr>
-<td style="width: 123px;">圖形修改</td>
-<td style="width: 406px;">40623133,40623142,40623145,40623146</td>
+<tr style="height: 51px;">
+<td style="width: 184px; height: 51px; border-color: #000000;">圖形修改</td>
+<td style="width: 184px; height: 51px; border-color: #000000;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">40623133,40623142,40623145,40623146</span></span></span></span></span></span></span></span></td>
 </tr>
-<tr>
-<td style="width: 123px;">程式編輯</td>
-<td style="width: 406px;">40623130,40623139 ,40423218(送球機構)</td>
+<tr style="height: 51px;">
+<td style="width: 184px; height: 51px; border-color: #000000;">程式編輯</td>
+<td style="width: 184px; height: 51px; border-color: #000000;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">40623130,40623139,40423218（球發送機制）</span></span></span></span></td>
 </tr>
-<tr>
-<td style="width: 123px;">V-rep 簡化</td>
-<td style="width: 406px;">40623115,40423136</td>
+<tr style="height: 51px;">
+<td style="width: 184px; height: 51px; border-color: #000000;">V-rep 簡化</td>
+<td style="width: 184px; height: 51px; border-color: #000000;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">40623115,40423136</span></span></span></span></span></span></span></span></td>
 </tr>
-<tr>
-<td style="width: 123px;">專案報告書</td>
-<td style="width: 406px;">ALL</td>
+<tr style="height: 51px;">
+<td style="width: 184px; height: 51px; border-color: #000000;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">專案報告書</span></span></span></span></span></span></span></span></td>
+<td style="width: 184px; height: 51px; border-color: #000000;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">所有</span></span></span></span></span></span></span></span></td>
 </tr>
 </tbody>
-</table>
-<h1>零組件尺寸分析</h1>
+</table><h1>零組件尺寸分析</h1>
 <p>手足球系統的零組件尺寸分析 (可行性分析)</p>
 <h1>參數設計與繪圖</h1>
 <p>手足球系統的零組件參數設計與繪圖 (零組件初步設計繪圖)</p>
@@ -186,75 +184,75 @@
 <p><img alt="" height="639" src="/images/team-divider-finil-finish.png" width="1000"/></p>
 <h3>分組程式修正</h3>
 <p>在利用亂數分組, 能否根據已經完成的主程式, 編寫一個網際程式或單機 PyQt5 程式, 讀進相關資料檔案後, 在瀏覽器或 PYQt5 程式中顯示出結果.</p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import random
-filename = 'cdbw3_student_list.txt'
-# 每組人數
-num_in_one_group = 11
-# 組序由 1 開始
-group = 1
-# 各班分組後所得數列
-c2019 = []
-with open(filename) as f:
-    # 讀進全部檔案, 轉進數列, 並同時將各行的 \n 去除
-    read_data = f.read().splitlines() 
-print("共有 " + str(len(read_data)) + " 位學員")
-# 利用 shuffle 將數列隨機弄亂
-random.shuffle(read_data)
-for i in range(len(read_data)):
-    # 利用整數相除的餘數進行分組
-    if i%num_in_one_group == 0:
-        # 列出分隔符號
-        print("-"*20)
-        print("group " + str(group) +":")
-        # 在分組區隔時重置各組學員數列
-        group_list = []
-        print()
-        # 同時列出與分隔標註對應 i 的數列內容
-        print(read_data[i])
-        group_list.append(read_data[i])
-        group = group + 1
-    else:
-        # 逐一列出同組的其他學員
-        print(read_data[i])
-        group_list.append(read_data[i])
-    if i%num_in_one_group == 0:
-        c2019.append(group_list)
-# c2019 為該班分組後所得分組數列
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import random<span></span>
+filename = 'cdbw3_student_list.txt'<span></span>
+# 每組人數<span></span>
+num_in_one_group = 11<span></span>
+# 組序由 1 開始<span></span>
+group = 1<span></span>
+# 各班分組後所得數列<span></span>
+c2019 = []<span></span>
+with open(filename) as f:<span></span>
+    # 讀進全部檔案, 轉進數列, 並同時將各行的 \n 去除<span></span>
+    read_data = f.read().splitlines() <span></span>
+print("共有 " + str(len(read_data)) + " 位學員")<span></span>
+# 利用 shuffle 將數列隨機弄亂<span></span>
+random.shuffle(read_data)<span></span>
+for i in range(len(read_data)):<span></span>
+    # 利用整數相除的餘數進行分組<span></span>
+    if i%num_in_one_group == 0:<span></span>
+        # 列出分隔符號<span></span>
+        print("-"*20)<span></span>
+        print("group " + str(group) +":")<span></span>
+        # 在分組區隔時重置各組學員數列<span></span>
+        group_list = []<span></span>
+        print()<span></span>
+        # 同時列出與分隔標註對應 i 的數列內容<span></span>
+        print(read_data[i])<span></span>
+        group_list.append(read_data[i])<span></span>
+        group = group + 1<span></span>
+    else:<span></span>
+        # 逐一列出同組的其他學員<span></span>
+        print(read_data[i])<span></span>
+        group_list.append(read_data[i])<span></span>
+    if i%num_in_one_group == 0:<span></span>
+        c2019.append(group_list)<span></span>
+# c2019 為該班分組後所得分組數列<span></span>
 print(c2019)</pre>
 <p>原始程式只有將檔案cdbw3_student_list.txt讀進Python程式中做亂數分組</p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import random
-filename = 'cdbw3_student_list.txt'
-# 每組人數
-num_in_one_group = 8
-# 組序由 1 開始
-group = 1
-# 各班分組後所得數列
-c2019 = []
-with open(filename) as f:
-    # 讀進全部檔案, 轉進數列, 並同時將各行的 \n 去除
-    read_data = f.read().splitlines() 
-print("共有 " + str(len(read_data)) + " 位學員")
-# 利用 shuffle 將數列隨機弄亂
-random.shuffle(read_data)
-for i in range(len(read_data)):
-    # 利用整數相除的餘數進行分組
-    if i%num_in_one_group == 0:
-        # 列出分隔符號
-        print("-"*20)
-        print("group " + str(group) +":")
-        # 在分組區隔時重置各組學員數列
-        group_list = []
-        print()
-        # 同時列出與分隔標註對應 i 的數列內容
-        group_list.append(read_data[i])
-        group = group + 1
-        print("Leader:"+read_data[i])
-    else:
-        print("Member:"+read_data[i])
-    if i%num_in_one_group == 0:
-        c2019.append(group_list)
-# c2019 為該班分組後所得分組數列
-
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import random<span></span>
+filename = 'cdbw3_student_list.txt'<span></span>
+# 每組人數<span></span>
+num_in_one_group = 8<span></span>
+# 組序由 1 開始<span></span>
+group = 1<span></span>
+# 各班分組後所得數列<span></span>
+c2019 = []<span></span>
+with open(filename) as f:<span></span>
+    # 讀進全部檔案, 轉進數列, 並同時將各行的 \n 去除<span></span>
+    read_data = f.read().splitlines() <span></span>
+print("共有 " + str(len(read_data)) + " 位學員")<span></span>
+# 利用 shuffle 將數列隨機弄亂<span></span>
+random.shuffle(read_data)<span></span>
+for i in range(len(read_data)):<span></span>
+    # 利用整數相除的餘數進行分組<span></span>
+    if i%num_in_one_group == 0:<span></span>
+        # 列出分隔符號<span></span>
+        print("-"*20)<span></span>
+        print("group " + str(group) +":")<span></span>
+        # 在分組區隔時重置各組學員數列<span></span>
+        group_list = []<span></span>
+        print()<span></span>
+        # 同時列出與分隔標註對應 i 的數列內容<span></span>
+        group_list.append(read_data[i])<span></span>
+        group = group + 1<span></span>
+        print("Leader:"+read_data[i])<span></span>
+    else:<span></span>
+        print("Member:"+read_data[i])<span></span>
+    if i%num_in_one_group == 0:<span></span>
+        c2019.append(group_list)<span></span>
+# c2019 為該班分組後所得分組數列<span></span>
+<span></span>
 print("Group_leader"+str(c2019))</pre>
 <p><br/><br/></p>
 <p>在i 迴圈當中加入if i %num_in_one_group == 0: 檢驗ｉ除上組員數量是否=0</p>
@@ -391,69 +389,69 @@ print("Group_leader"+str(c2019))</pre>
 <p>樹狀圖為gif中所表示</p>
 <p><img alt="" height="449" src="/images/2019-04-07_22-37-07.gif" width="800"/></p>
 <p>下方為Lua code ---&gt;用於Vrep3.6.1版本中 </p>
-<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">function sysCall_init() 
-    right_left_handle= sim.getObjectHandle('RJ1')
-    up_down_handle= sim.getObjectHandle('RJ2')
-    MaxVel=5
-    right_left_velocity=0
-    up_down_velocity=0
-    dVel=0.5;
-    sim.setJointTargetVelocity(right_left_handle,right_left_velocity)
-    sim.setJointTargetVelocity(up_down_handle,up_down_velocity)
-end
-
-function sysCall_actuation() 
-    message,auxiliaryData=sim.getSimulatorMessage()
-    while message~=-1 do
-        if (message==sim.message_keypress) then
-            if (auxiliaryData[1]==32) then
-                -- right key
-                right_left_velocity=0
-                up_down_velocity=0
-                sim.setJointForce(right_left_handle, 0)
-                sim.setJointForce(up_down_handle, 0)
-                break
-            else
-                sim.setJointForce(right_left_handle, 10000)
-                sim.setJointForce(up_down_handle, 10000)
-            end
-            if (auxiliaryData[1]==2007) then
-                -- left key
-                right_left_velocity=right_left_velocity+dVel*1.3
-            end
-            if (auxiliaryData[1]==2008) then
-                -- right key
-                right_left_velocity=right_left_velocity-dVel*1.3
-            end
-            if (auxiliaryData[1]==2009) then
-                -- up key
-                up_down_velocity=up_down_velocity+dVel/10
-            end
-            if (auxiliaryData[1]==2010) then
-                -- down key
-                up_down_velocity=up_down_velocity-dVel/10
-            end
-        end
-        message,auxiliaryData=sim.getSimulatorMessage()
-    end
-    
-    if right_left_velocity&gt;MaxVel then
-        right_left_velocity=-5
-    end
-    if right_left_velocity&lt;-MaxVel then
-        right_left_velocity=5
-    end
-    
-    if up_down_velocity&gt;MaxVel then
-        up_down_velocity=0
-    end
-    if up_down_velocity&lt;-MaxVel then
-        up_down_velocity=0
-    end
-    
-    sim.setJointTargetVelocity(right_left_handle,right_left_velocity)
-    sim.setJointTargetVelocity(up_down_handle,up_down_velocity)
-    
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">function sysCall_init() <span></span>
+    right_left_handle= sim.getObjectHandle('RJ1')<span></span>
+    up_down_handle= sim.getObjectHandle('RJ2')<span></span>
+    MaxVel=5<span></span>
+    right_left_velocity=0<span></span>
+    up_down_velocity=0<span></span>
+    dVel=0.5;<span></span>
+    sim.setJointTargetVelocity(right_left_handle,right_left_velocity)<span></span>
+    sim.setJointTargetVelocity(up_down_handle,up_down_velocity)<span></span>
+end<span></span>
+<span></span>
+function sysCall_actuation() <span></span>
+    message,auxiliaryData=sim.getSimulatorMessage()<span></span>
+    while message~=-1 do<span></span>
+        if (message==sim.message_keypress) then<span></span>
+            if (auxiliaryData[1]==32) then<span></span>
+                -- right key<span></span>
+                right_left_velocity=0<span></span>
+                up_down_velocity=0<span></span>
+                sim.setJointForce(right_left_handle, 0)<span></span>
+                sim.setJointForce(up_down_handle, 0)<span></span>
+                break<span></span>
+            else<span></span>
+                sim.setJointForce(right_left_handle, 10000)<span></span>
+                sim.setJointForce(up_down_handle, 10000)<span></span>
+            end<span></span>
+            if (auxiliaryData[1]==2007) then<span></span>
+                -- left key<span></span>
+                right_left_velocity=right_left_velocity+dVel*1.3<span></span>
+            end<span></span>
+            if (auxiliaryData[1]==2008) then<span></span>
+                -- right key<span></span>
+                right_left_velocity=right_left_velocity-dVel*1.3<span></span>
+            end<span></span>
+            if (auxiliaryData[1]==2009) then<span></span>
+                -- up key<span></span>
+                up_down_velocity=up_down_velocity+dVel/10<span></span>
+            end<span></span>
+            if (auxiliaryData[1]==2010) then<span></span>
+                -- down key<span></span>
+                up_down_velocity=up_down_velocity-dVel/10<span></span>
+            end<span></span>
+        end<span></span>
+        message,auxiliaryData=sim.getSimulatorMessage()<span></span>
+    end<span></span>
+    <span></span>
+    if right_left_velocity&gt;MaxVel then<span></span>
+        right_left_velocity=-5<span></span>
+    end<span></span>
+    if right_left_velocity&lt;-MaxVel then<span></span>
+        right_left_velocity=5<span></span>
+    end<span></span>
+    <span></span>
+    if up_down_velocity&gt;MaxVel then<span></span>
+        up_down_velocity=0<span></span>
+    end<span></span>
+    if up_down_velocity&lt;-MaxVel then<span></span>
+        up_down_velocity=0<span></span>
+    end<span></span>
+    <span></span>
+    sim.setJointTargetVelocity(right_left_handle,right_left_velocity)<span></span>
+    sim.setJointTargetVelocity(up_down_handle,up_down_velocity)<span></span>
+    <span></span>
 end </pre>
 <p>測試版本目前還未設定雙判定來改變控制的桿件(希望能行)&amp;還有電腦的回擊也還沒寫入。</p>
 <p></p>
@@ -555,9 +553,9 @@ end </pre>
 <p>Step12：輸入 sudo vi 50-clould-init.yaml按下Enter。</p>
 <p>Step13：輸入密碼kmol2019，前往設定。</p>
 <p>(上下左右為 K J H L)</p>
-<p>Step14：dhcp4:false<br/>　　　　addresses:192.168.56.2/24<br/>　　　　gateway4:192.168.56.1</p>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">步驟14：dhcp4：false </span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">　　　　地址：192.168.56.2/24 </span><span style="vertical-align: inherit;">gateway4 </span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">　　　　：192.168.56.1</span></span></p>
 <p>Step15：編輯完成按下Ctrl+C退出，然後輸入sudo netplan apply同意設定。</p>
 <p>Step16：輸入ifconfig 檢查ip。</p>
 <p>Step17：輸入sudo survice cmsimfly restart重新啟動。</p>
-<p>影片如下：</p>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">影片如下：</span></span></p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/787PgHBeQGE" width="560"></iframe></p>

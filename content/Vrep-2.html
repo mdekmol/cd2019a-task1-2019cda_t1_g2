@@ -94,69 +94,69 @@ $(document).ready(doSearch);
 <p>樹狀圖為gif中所表示</p>
 <p><img alt="" height="449" src="./../images/2019-04-07_22-37-07.gif" width="800"/></p>
 <p>下方為Lua code ---&gt;用於Vrep3.6.1版本中 </p>
-<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">function sysCall_init() 
-    right_left_handle= sim.getObjectHandle('RJ1')
-    up_down_handle= sim.getObjectHandle('RJ2')
-    MaxVel=5
-    right_left_velocity=0
-    up_down_velocity=0
-    dVel=0.5;
-    sim.setJointTargetVelocity(right_left_handle,right_left_velocity)
-    sim.setJointTargetVelocity(up_down_handle,up_down_velocity)
-end
-
-function sysCall_actuation() 
-    message,auxiliaryData=sim.getSimulatorMessage()
-    while message~=-1 do
-        if (message==sim.message_keypress) then
-            if (auxiliaryData[1]==32) then
-                -- right key
-                right_left_velocity=0
-                up_down_velocity=0
-                sim.setJointForce(right_left_handle, 0)
-                sim.setJointForce(up_down_handle, 0)
-                break
-            else
-                sim.setJointForce(right_left_handle, 10000)
-                sim.setJointForce(up_down_handle, 10000)
-            end
-            if (auxiliaryData[1]==2007) then
-                -- left key
-                right_left_velocity=right_left_velocity+dVel*1.3
-            end
-            if (auxiliaryData[1]==2008) then
-                -- right key
-                right_left_velocity=right_left_velocity-dVel*1.3
-            end
-            if (auxiliaryData[1]==2009) then
-                -- up key
-                up_down_velocity=up_down_velocity+dVel/10
-            end
-            if (auxiliaryData[1]==2010) then
-                -- down key
-                up_down_velocity=up_down_velocity-dVel/10
-            end
-        end
-        message,auxiliaryData=sim.getSimulatorMessage()
-    end
-    
-    if right_left_velocity&gt;MaxVel then
-        right_left_velocity=-5
-    end
-    if right_left_velocity&lt;-MaxVel then
-        right_left_velocity=5
-    end
-    
-    if up_down_velocity&gt;MaxVel then
-        up_down_velocity=0
-    end
-    if up_down_velocity&lt;-MaxVel then
-        up_down_velocity=0
-    end
-    
-    sim.setJointTargetVelocity(right_left_handle,right_left_velocity)
-    sim.setJointTargetVelocity(up_down_handle,up_down_velocity)
-    
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">function sysCall_init() <span></span>
+    right_left_handle= sim.getObjectHandle('RJ1')<span></span>
+    up_down_handle= sim.getObjectHandle('RJ2')<span></span>
+    MaxVel=5<span></span>
+    right_left_velocity=0<span></span>
+    up_down_velocity=0<span></span>
+    dVel=0.5;<span></span>
+    sim.setJointTargetVelocity(right_left_handle,right_left_velocity)<span></span>
+    sim.setJointTargetVelocity(up_down_handle,up_down_velocity)<span></span>
+end<span></span>
+<span></span>
+function sysCall_actuation() <span></span>
+    message,auxiliaryData=sim.getSimulatorMessage()<span></span>
+    while message~=-1 do<span></span>
+        if (message==sim.message_keypress) then<span></span>
+            if (auxiliaryData[1]==32) then<span></span>
+                -- right key<span></span>
+                right_left_velocity=0<span></span>
+                up_down_velocity=0<span></span>
+                sim.setJointForce(right_left_handle, 0)<span></span>
+                sim.setJointForce(up_down_handle, 0)<span></span>
+                break<span></span>
+            else<span></span>
+                sim.setJointForce(right_left_handle, 10000)<span></span>
+                sim.setJointForce(up_down_handle, 10000)<span></span>
+            end<span></span>
+            if (auxiliaryData[1]==2007) then<span></span>
+                -- left key<span></span>
+                right_left_velocity=right_left_velocity+dVel*1.3<span></span>
+            end<span></span>
+            if (auxiliaryData[1]==2008) then<span></span>
+                -- right key<span></span>
+                right_left_velocity=right_left_velocity-dVel*1.3<span></span>
+            end<span></span>
+            if (auxiliaryData[1]==2009) then<span></span>
+                -- up key<span></span>
+                up_down_velocity=up_down_velocity+dVel/10<span></span>
+            end<span></span>
+            if (auxiliaryData[1]==2010) then<span></span>
+                -- down key<span></span>
+                up_down_velocity=up_down_velocity-dVel/10<span></span>
+            end<span></span>
+        end<span></span>
+        message,auxiliaryData=sim.getSimulatorMessage()<span></span>
+    end<span></span>
+    <span></span>
+    if right_left_velocity&gt;MaxVel then<span></span>
+        right_left_velocity=-5<span></span>
+    end<span></span>
+    if right_left_velocity&lt;-MaxVel then<span></span>
+        right_left_velocity=5<span></span>
+    end<span></span>
+    <span></span>
+    if up_down_velocity&gt;MaxVel then<span></span>
+        up_down_velocity=0<span></span>
+    end<span></span>
+    if up_down_velocity&lt;-MaxVel then<span></span>
+        up_down_velocity=0<span></span>
+    end<span></span>
+    <span></span>
+    sim.setJointTargetVelocity(right_left_handle,right_left_velocity)<span></span>
+    sim.setJointTargetVelocity(up_down_handle,up_down_velocity)<span></span>
+    <span></span>
 end </pre>
 <p>測試版本目前還未設定雙判定來改變控制的桿件(希望能行)&amp;還有電腦的回擊也還沒寫入。</p>
 <p></p>
