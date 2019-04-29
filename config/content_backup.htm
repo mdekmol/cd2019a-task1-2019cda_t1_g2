@@ -458,6 +458,29 @@ end </pre>
 <p>許高惟-40623139<span> : </span></p>
 <p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ra85X-tfSOg" width="560"></iframe></span></p>
 <p><span>郭益綸-</span>40623142<span> : </span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Ne7Abrc82Qk" width="560"></iframe></span></p>
 <p><span>林暉恩-</span>40623145<span> : </span></p>
 <p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/XM1a_FBw4Bw" width="560"></iframe></span></p>
-<p><span>  劉 奇  -40623146 : </span></p>
+<p><span>  </span><span>劉 奇  -40623146 : </span></p>
+<h1>Task-3</h1>
+<h2>Virtualbox虛擬主機網路設定</h2>
+<p>Step1：前往<a href="https://drive.google.com/file/d/1bSBdEPVn6IG22cVLpTbY97JY16vjlatz/view?usp=sharing">雲端載點</a>將檔案UB1804下載下來。</p>
+<p>Step2：開啟Oracle VM VirtualBox Manager。</p>
+<p>Step3：點擊右方視窗中的"NEW"按鈕來新增虛擬主機(名稱可隨意)，按下NEXT。</p>
+<p>Step3：將Memory size調到4GB，按下NEXT。</p>
+<p>Step4：將Hard disk選擇Use an existing virtual hard disk file(選項第三個)。</p>
+<p>Step5：選擇檔案右方按鈕尋找"ub1804"檔案按下確定。</p>
+<p>Step6：回到主畫面，點擊剛剛建立的虛擬主機ub1804，點擊右方視窗中的Setting前往設定。</p>
+<p>Step7：左方選單中選擇Network，在右方視窗的Attached to選單中選擇Bridged Adapter(當使用者需要利用虛擬主機建立與 Host 位階相同的網路模式時，可以將虛擬主機的網卡設訂為 Bridged Adapter.)，確認後按下OK。</p>
+<p>Step8：回到主畫面，啟動剛剛設定好的檔案，在右方視窗按下Start。</p>
+<p>Step9：輸入帳號密碼(帳號：kmol2019密碼：kmol2019)</p>
+<p>Step10：可以輸入 ifconfig 來查看IP。</p>
+<p>Step11：輸入 cd /etc/netplan 按下Enter後，輸入1s -1按下Enter。</p>
+<p>Step12：輸入 sudo vi 50-clould-init.yaml按下Enter。</p>
+<p>Step13：輸入密碼kmol2019，前往設定。</p>
+<p>(上下左右為 K J H L)</p>
+<p>Step14：dhcp4:false<br/>　　　　addresses:192.168.56.2/24<br/>　　　　gateway4:192.168.56.1</p>
+<p>Step15：編輯完成按下Ctrl+C退出，然後輸入sudo netplan apply同意設定。</p>
+<p>Step16：輸入ifconfig 檢查ip。</p>
+<p>Step17：輸入sudo survice cmsimfly restart重新啟動。</p>
+<p>影片如下：</p>
