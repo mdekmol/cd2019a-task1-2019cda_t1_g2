@@ -55,10 +55,8 @@
 <p>各組利用倉儲中的 Reveal.js 進行結案簡報 (結案口頭簡報)</p>
 <h2>專案報告書</h2>
 <p>各組完成 html 與 pdf 格式之手足球專案結案報告 (文字結案報告書)</p>
-<h1>V-rep簡化</h1>
-<p><img alt="" height="271" src="/images/p37_11-52-33.png" width="433"/></p><h1>第十周</h1>
-<p>第十周前的網站內容</p>
-<h2>簡介</h2>
+<h1>第十周前</h1>
+<p>第十周前的網站內容</p><h2>簡介</h2>
 <p>產品協同設計課程第二組</p>
 <h5><a href="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g2">倉儲位置</a></h5>
 <h5><a href="https://cda2019g2.blogspot.com/">Blogger</a></h5>
@@ -566,4 +564,76 @@ print(result)</pre>
 <p></p>
 <h2>圖形簡化</h2>
 <p><a href="/downloads/football clean.7z">球桿簡化</a></p>
-<p></p>
+<p><img alt="" height="625" src="/images/p37_11-52-33.png" width="1000"/></p>
+<h1>第十二周</h1>
+<p>----暫時放著----</p>
+<p>改寫code=python to lua並簡化</p>
+<p>優點:</p>
+<p>python : 可執行運算值較大的編譯</p>
+<p>lua : Vrep內部沿用 , 延遲現象較少</p>
+<p><span>缺點:</span></p>
+<p>python : 會有爆ping問題導致延遲</p>
+<p>lua : 太多運算時直接停止</p>
+<p><img alt="" height="637" src="/images/tfootball.gif" width="750"/></p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="//www.youtube.com/embed/8AMl569s5NI" width="560"></iframe></p>
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">function sysCall_init() 
+    KickBallV = 10
+    R_KickBallVel = (math.pi/180)*KickBallV
+    B_KickBallVel = -(math.pi/180)*KickBallV
+    Sphere_handle=sim.getObjectHandle('Sphere')
+    BRod_handle=sim.getObjectHandle('BRod')
+    BRev_handle=sim.getObjectHandle('BRev')
+    BMo_handle=sim.getObjectHandle('BMo')
+    --
+    RRod_handle=sim.getObjectHandle('RRod')
+    RRev_handle=sim.getObjectHandle('RRev')
+    RMo_handle=sim.getObjectHandle('RMo')
+end
+function sysCall_actuation()
+    position_BR=sim.getObjectPosition(BRod_handle,-1)
+    position_S=sim.getObjectPosition(Sphere_handle,-1)
+    X =position_S[1] - position_BR[1]
+    Y =position_S[2] - position_BR[2]
+    if 1 then
+        if X &lt;= 0.02 and Y &lt;= 0 then
+            sim.setJointTargetVelocity(BRev_handle,B_KickBallVel)
+            sim.setJointTargetVelocity(BRev_handle,-1)
+        elseif X &gt; 0.02 and Y &lt;= 0 then
+            sim.setJointTargetVelocity(BRev_handle,B_KickBallVel)
+            sim.setJointTargetVelocity(BRev_handle,1)
+        elseif X &lt;= 0.02 and Y &gt; 0 then            
+            sim.setJointTargetVelocity(BRev_handle,R_KickBallVel)
+            sim.setJointTargetVelocity(BRev_handle,-1)        
+        elseif X &gt; 0.02 and Y &gt; 0 then            
+            sim.setJointTargetVelocity(BRev_handle,R_KickBallVel)    
+            sim.setJointTargetVelocity(BRev_handle,1)
+        end
+        YYYYY = Y*5
+        sim.setJointTargetVelocity(BMo_handle,YYYYY)
+    end
+---
+    position_RR=sim.getObjectPosition(RRod_handle,-1)
+    X =position_S[1] - position_RR[1]
+    Y =position_S[2] - position_RR[2]
+    if 1 then
+        if X &lt;= 0.02 and Y &lt;= 0 then
+            sim.setJointTargetVelocity(RRev_handle,B_KickBallVel)
+            sim.setJointTargetVelocity(RRev_handle,-1)
+        elseif X &gt; 0.02 and Y &lt;= 0 then
+            sim.setJointTargetVelocity(RRev_handle,B_KickBallVel)
+            sim.setJointTargetVelocity(RRev_handle,1)
+        elseif X &lt;= 0.02 and Y &gt; 0 then            
+            sim.setJointTargetVelocity(RRev_handle,R_KickBallVel)
+            sim.setJointTargetVelocity(RRev_handle,-1)        
+        elseif X &gt; 0.02 and Y &gt; 0 then            
+            sim.setJointTargetVelocity(RRev_handle,R_KickBallVel)    
+            sim.setJointTargetVelocity(RRev_handle,1)
+        end
+        YYYYY = Y*5
+        sim.setJointTargetVelocity(RMo_handle,YYYYY)
+    end
+end
+--by 40623130--</pre>
+<p><a href="/downloads/tfootball.7z">ttt檔</a></p>
+<p>原本要編寫切換鍵但於vrep中用io.clock等時間等待輸入雙命令時會出現運算值過大導致停止問題 , 所以先寫電腦打擊與跟蹤球<br/><br/></p>
+<p>原python code出處(by 40623128):<a href="https://mdekmol.github.io/cd2019a-task1-2019cda_t1_g3_1/content/%E6%89%8B%E8%B6%B3%E7%90%83%E6%89%8B%E6%8E%A7%E8%88%87%E9%9B%BB%E8%85%A6%E5%B0%8D%E6%89%93.html">https://mdekmol.github.io/cd2019a-task1-2019cda_t1_g3_1/content/%E6%89%8B%E8%B6%B3%E7%90%83%E6%89%8B%E6%8E%A7%E8%88%87%E9%9B%BB%E8%85%A6%E5%B0%8D%E6%89%93.html</a></p>
