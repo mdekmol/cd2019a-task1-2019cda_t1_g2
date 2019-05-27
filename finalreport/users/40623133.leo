@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by Leo: http://leoeditor.com/leo_toc.html -->
 <leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" >
-<leo_header file_format="2"/>
-<globals/>
+<leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
+<globals body_outline_ratio="0.5" body_secondary_ratio="0.5">
+	<global_window_position top="50" left="50" height="500" width="700"/>
+	<global_log_window_position top="0" left="0" height="0" width="0"/>
+</globals>
 <preferences/>
 <find_panel_settings/>
 <vnodes>
@@ -15,23 +18,23 @@
 </v>
 <v t="leo.20171122224218.1"><vh>目錄規劃</vh></v>
 <v t="leo1.20171221090839.1"><vh>Fossil SCM 內容</vh></v>
-<v t="leo1.20171221090811.1"><vh>期末報告編寫</vh>
+<v t="leo1.20171221090811.1" a="E"><vh>期末報告編寫</vh>
 <v t="leo1.20171221090921.1"><vh>@button Report pdf</vh></v>
-<v t="leo1.20171221090954.1"><vh>@path ./..</vh>
-<v t="leo1.20171221091031.1"><vh>@path markdown</vh>
+<v t="leo1.20171221090954.1" a="E"><vh>@path ./..</vh>
+<v t="leo1.20171221091031.1" a="E"><vh>@path markdown</vh>
 <v t="leo1.20171221091031.2"><vh>@edit reference.md</vh></v>
 <v t="leo1.20171221091031.3"><vh>@edit refer.bib</vh></v>
-<v t="leo1.20171221091031.4"><vh>封面以及摘要</vh>
+<v t="leo1.20171221091031.4" a="E"><vh>封面以及摘要</vh>
 <v t="leo1.20171221091031.5"><vh>@clean cover_and_abstract.md</vh>
 <v t="leo1.20171221091031.6"><vh>摘要</vh></v>
 </v>
 </v>
-<v t="leo1.20171221091031.7"><vh>各章節內容</vh>
-<v t="leo1.20171221091031.8"><vh>@path paragraph</vh>
-<v t="leo1.20171221091031.9"><vh>@clean introduction.md</vh>
+<v t="leo1.20171221091031.7" a="E"><vh>各章節內容</vh>
+<v t="leo1.20171221091031.8" a="E"><vh>@path paragraph</vh>
+<v t="leo1.20171221091031.9" a="E"><vh>@clean introduction.md</vh>
 <v t="leo1.20171221091031.10"><vh>前言內容</vh></v>
 </v>
-<v t="leo1.20171221091031.11"><vh>@clean import.md</vh>
+<v t="leo1.20171221091031.11" a="E"><vh>@clean import.md</vh>
 <v t="leo1.20171221091031.12"><vh>導入物件</vh></v>
 </v>
 <v t="leo.20190101193619.1"><vh>@clean demolit.md</vh>
@@ -42,13 +45,13 @@
 </v>
 </v>
 </v>
-<v t="leo.20180110233617.1"><vh>Recovered Nodes</vh>
+<v t="leo.20180110233617.1" a="E"><vh>Recovered Nodes</vh>
 <v t="leo.20180110233617.2"><vh>Recovered node "摘要" from @clean cover_and_abstract.md</vh>
 <v t="leo.20180110233617.3"><vh>old:摘要</vh></v>
 <v t="leo.20180110233617.4"><vh>new:摘要</vh></v>
 </v>
 </v>
-<v t="leo.20180111013609.2"><vh>Recovered Nodes</vh>
+<v t="leo.20180111013609.2" a="E"><vh>Recovered Nodes</vh>
 <v t="leo.20180111013609.3"><vh>Recovered node "計算機程式內容" from @clean calculator.md</vh>
 <v t="leo.20180111013609.4"><vh>old:計算機程式內容</vh></v>
 <v t="leo.20180111013609.5"><vh>new:計算機程式內容</vh></v>
@@ -548,14 +551,20 @@ g.es('-'*12)</t>
 <t tx="leo1.20171221091031.5">---
 university_zh: '國立虎尾科技大學'
 institute_zh: '機械設計工程系'
-category_zh: '電腦輔助設計實習 ag4 V-rep基本操作'
-title_zh: 'V-rep基本操作'
-title_en: 'V-rep basic operation'
+category_zh: '電腦輔助設計實習 ag2 手足球'
+title_zh: '期末結報'
+title_en: 'Final Report'
 author:
-- 設計二甲 40623130 陳鉅忠 
-
+- 設計二甲 陳鉅忠 40623130
+- 設計二甲 吳隆廷-40623115
+- 設計二甲 蕭家翰-40623133
+- 設計二甲 許高惟-40623139
+- 設計二甲 郭益綸-40623142
+- 設計二甲 林暉恩-40623145
+- 設計二甲  劉 奇  -40623146
+- 設計四甲 陳柏維-40423136
+- 設計四乙 周政叡-40423218
 advisor_zh: '嚴家銘'
-date: '2019.1.2'
 ---
 
 @others
