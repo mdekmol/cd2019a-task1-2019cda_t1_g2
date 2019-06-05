@@ -15,14 +15,19 @@
 <p>1.手足球場地(長:57.4in  寬:30in  總高:10.7in)</p>
 <p><img caption="false" height="422" src="/images/場地長寬1.png" width="800"/><img alt="" height="401" src="/images/球門邊界1.png" width="800"/></p>
 <p>原先球門牆壁厚度為0.7in</p>
-<p><img alt="" height="195" src="/images/tdrhr.png" width="400"/></p>
-<p><img alt="" height="196" src="/images/khlj.png" width="400"/></p>
+<p><img caption="false" height="244" src="/images/tdrhr.png" width="500"/></p>
+<p><img caption="false" height="245" src="/images/khlj.png" width="500"/></p>
 <p>後來在模擬時發現球門前的球員動作距離有限,球容易卡在死角,最後決定將球門牆壁加厚</p>
 <p>球門尺寸</p>
 <p><img alt="" height="552" src="/images/球門尺寸1.png" width="1000"/><img alt="" height="402" src="/images/球門尺寸2.png" width="800"/></p>
 <p></p>
+<p>球員總高4.3in以及跟竿子結合的洞(直徑)為0.562in</p>
+<p><img alt="" height="779" src="/images/球員.PNG" width="581"/></p>
+<p>竿子直徑為0.562in</p>
+<p>原本的竿子有給限制頭尾，但後來發現在模擬時會有一些小問題，所以決定去除</p>
+<p><img alt="" height="459" src="/images/竿子.PNG" width="500"/></p>
+<p><img alt="" height="483" src="/images/竿子1.PNG" width="500"/></p>
 <p>〈軌道詳細設計〉</p>
-<p><img alt="" height="1116" src="/images/新軌道設計.PNG" width="727"/></p>
 <p>設計初步草圖</p>
 <p><img alt="" height="553" src="/images/軌道截面.png" width="861"/></p>
 <p>寬度設計1.5因需比球體半徑大一些</p>
@@ -37,8 +42,9 @@
 <p><img alt="" height="709" src="/images/新軌道Soildworks.PNG" width="1325"/></p>
 <p>Soild完整圖</p>
 <p><img alt="" height="620" src="/images/新軌道Oneshape.PNG" width="1124"/></p>
-<p>Oneshape完整圖</p>
-<h2>參數設計與繪圖</h2>
+<p><span>〈</span>集球門〉</p>
+<p></p>
+<p>Oneshape完整圖</p><h2>參數設計與繪圖</h2>
 <p>手足球系統的零組件參數設計與繪圖 (零組件初步設計繪圖)</p>
 <p><a href="https://cad.onshape.com/documents/0894dee7161cb625fbf66c24/w/dd82ba727b43d8551157d048/e/4e12526592dd2e271bca4ad7">Onshape 零組件連結</a></p>
 <p>【機構設計】</p>
@@ -69,6 +75,16 @@
 <p><img alt="" height="742" src="/images/打擊裝置.PNG" width="412"/></p>
 <p>打擊機構非常直覺，就是使用一個帶緣圓棒將球打擊出去，</p>
 <p>並外掛置打擊區旁，作為球之動力。</p>
+<p></p>
+<p><span>〈</span><span>集球門</span><span>〉</span></p>
+<p>原先的設計，發現組裝後門框的高度沒有高於球門，怕會出現卡球的可能所以要重新畫</p>
+<p><img alt="" height="502" src="/images/擷取12.PNG" width="591"/></p>
+<p><img alt="" height="600" src="/images/擷取13.PNG" width="582"/></p>
+<p></p>
+<p>第二版 </p>
+<p><img alt="" height="545" src="/images/擷取 5.PNG" width="781"/></p>
+<p>在畫的時候發現球檯沒有高度，而假如球快速的撞擊檔板可能會造成球直接反彈並有可能回到場地內，就把球檯加高3英吋，在檔板的部分畫成密閉式以防球會跑出去</p>
+<p><img alt="" height="454" src="/images/Inked擷取14_LI.jpg" width="850"/></p>
 <h2>細部設計與 BOM</h2>
 <p>完成手足球零組件細部設計 (可參考<span> </span><a href="https://youtu.be/PgnvZV5s13c">https://youtu.be/PgnvZV5s13c</a><span> </span>中各項設計), 並將設計 BOM (Bill of Materials) 納入 CMSimfly 網際內容管理系統. (系統 BOM 文件整理)</p>
 <p>手足球 DIY 影片:</p>
@@ -1114,3 +1130,4 @@ function C_K_B_X4() --C_fourth_kick--
     sim.setJointTargetVelocity(LR4,5)
     end
 end</pre>
+<p></p>
