@@ -9,11 +9,11 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="leo.20171122223841.1"><vh>@settings</vh>
+<v t="leo.20171122223841.1" a="E"><vh>@settings</vh>
 <v t="leo.20171122223841.2"><vh>@data qt-gui-plugin-style-sheet</vh></v>
 <v t="leo.20171122223841.3"><vh>@string initial_split_orientation = horizontal</vh></v>
 </v>
-<v t="leo.20171122224051.1"><vh>有關本專案</vh>
+<v t="leo.20171122224051.1" a="E"><vh>有關本專案</vh>
 <v t="leo.20171122224436.1"><vh>PyQt5 官方程式碼</vh></v>
 </v>
 <v t="leo.20171122224218.1"><vh>目錄規劃</vh></v>
@@ -31,14 +31,17 @@
 </v>
 <v t="leo1.20171221091031.7" a="E"><vh>各章節內容</vh>
 <v t="leo1.20171221091031.8" a="E"><vh>@path paragraph</vh>
-<v t="leo1.20171221091031.9" a="E"><vh>@clean introduction.md</vh>
+<v t="leo1.20171221091031.9"><vh>@clean introduction.md</vh>
 <v t="leo1.20171221091031.10"><vh>前言內容</vh></v>
 </v>
-<v t="leo1.20171221091031.11" a="E"><vh>@clean import.md</vh>
+<v t="leo1.20171221091031.11"><vh>@clean import.md</vh>
 <v t="leo1.20171221091031.12"><vh>導入物件</vh></v>
 </v>
-<v t="leo.20190101193619.1"><vh>@clean demolit.md</vh>
+<v t="leo.20190101193619.1" a="E"><vh>@clean demolit.md</vh>
 <v t="leo.20190101193619.2"><vh>拆解物件集合</vh></v>
+</v>
+<v t="leo.20190608170843.1" a="E"><vh>@clean des.md</vh>
+<v t="leo.20190608170843.2"><vh>設計與繪圖</vh></v>
 </v>
 </v>
 </v>
@@ -470,6 +473,12 @@ Table: 價目表 {#tbl:價目表}
 選取剛剛拆解的全部物件，點選左上的Edit→Reorient bounding box→with reference of world這樣物件們就會全部對齊了。!!!
 
 </t>
+<t tx="leo.20190608170843.1">設計與繪圖
+===
+@others
+</t>
+<t tx="leo.20190608170843.2">零組件尺寸分析
+</t>
 <t tx="leo1.20171221090811.1"></t>
 <t tx="leo1.20171221090839.1"></t>
 <t tx="leo1.20171221090921.1">@language python
@@ -496,7 +505,8 @@ g.es("---Pandoc---")
 chapter_list = " ".join("./paragraph/" + i for i in [
 "introduction.md",
 "import.md", 
-"demolit.md"
+"demolit.md",
+"des.md"
 ])
 
 # 若系統並未正確轉檔, 可以將 os.system 改為 g.es 表示要使用 Leo Editor 的 global 物件中的 echo string 將指令印在 log 區
