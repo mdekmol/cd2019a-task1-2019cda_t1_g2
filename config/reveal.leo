@@ -35,7 +35,7 @@
 <v t="leo.20180902120523.17"><vh>執行規劃</vh></v>
 </v>
 </v>
-<v t="leo.20190610003150.1" a="E"><vh>各部零件介紹</vh>
+<v t="leo.20190610003150.1"><vh>各部零件介紹</vh>
 <v t="leo.20190610003150.2" a="E"><vh>專案執行內容</vh>
 <v t="leo.20190610003150.3"><vh>球場</vh></v>
 </v>
@@ -44,6 +44,14 @@
 </v>
 <v t="leo.20190610003245.1" a="E"><vh>執行規劃</vh>
 <v t="leo.20190610003245.2"><vh>回球機構</vh></v>
+</v>
+</v>
+<v t="leo.20190610010123.1"><vh>v-rep</vh>
+<v t="leo.20190610010123.2" a="E"><vh>送球機構設計與模擬</vh>
+<v t="leo.20190610010123.3"><vh>送球機構設計與模擬</vh></v>
+</v>
+<v t="leo.20190610010123.4" a="E"><vh>系統功能展示</vh>
+<v t="leo.20190610010123.5"><vh>系統功能展示</vh></v>
 </v>
 </v>
 </v>
@@ -338,7 +346,7 @@ vertical: body pane on the botton</t>
 <t tx="leo.20190610003150.5"># 球員
 
 
-&lt;img src="https://mdekmol.github.io/cd2019a-task1-2019cda_t1_g2/images/%E7%90%83%E5%93%A1.PNG" width="600" height="500"&gt;</t>
+&lt;img src="https://mdekmol.github.io/cd2019a-task1-2019cda_t1_g2/images/%E7%90%83%E5%93%A1.PNG" width="500" height="670"&gt;</t>
 <t tx="leo.20190610003245.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -354,5 +362,39 @@ vertical: body pane on the botton</t>
 
 
 &lt;img src="https://scontent.frmq1-1.fna.fbcdn.net/v/t1.15752-9/62594837_2547367261949496_2670933646193459200_n.png?_nc_cat=101&amp;_nc_ht=scontent.frmq1-1.fna&amp;oh=06097f5756817a0ba3b188f1643df7ff&amp;oe=5D8BA206" width="600" height="500"&gt;</t>
+<t tx="leo.20190610010123.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+</t>
+<t tx="leo.20190610010123.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20190610010123.3"># V-rep 動態模擬
+
+[重新編排碰撞關係、回球程式更新](https://www.youtube.com/watch?v=HpKoChBwPaw)</t>
+<t tx="leo.20190610010123.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20190610010123.5"># 系統功能展示
+
+
+[人機對決](https://mdekmol.github.io/cd2019a-task1-2019cda_t1_g2/content/%E7%B3%BB%E7%B5%B1%E5%8A%9F%E8%83%BD%E5%B1%95%E7%A4%BA.html)</t>
 </tnodes>
 </leo_file>
