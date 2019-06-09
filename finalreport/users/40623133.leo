@@ -31,17 +31,17 @@
 </v>
 <v t="leo1.20171221091031.7" a="E"><vh>各章節內容</vh>
 <v t="leo1.20171221091031.8" a="E"><vh>@path paragraph</vh>
-<v t="leo1.20171221091031.9"><vh>@clean introduction.md</vh>
+<v t="leo1.20171221091031.9" a="E"><vh>@clean introduction.md</vh>
 <v t="leo1.20171221091031.10"><vh>前言內容</vh></v>
 </v>
-<v t="leo1.20171221091031.11"><vh>@clean import.md</vh>
-<v t="leo1.20171221091031.12"><vh>導入物件</vh></v>
+<v t="leo1.20171221091031.11" a="E"><vh>@clean import.md</vh>
+<v t="leo1.20171221091031.12"><vh>執行規劃</vh></v>
 </v>
 <v t="leo.20190101193619.1" a="E"><vh>@clean demolit.md</vh>
-<v t="leo.20190101193619.2"><vh>拆解物件集合</vh></v>
+<v t="leo.20190101193619.2"><vh>設計與繪圖</vh></v>
 </v>
 <v t="leo.20190608170843.1" a="E"><vh>@clean des.md</vh>
-<v t="leo.20190608170843.2"><vh>設計與繪圖</vh></v>
+<v t="leo.20190608170843.2"><vh>V-rep 動態模擬</vh></v>
 </v>
 </v>
 </v>
@@ -460,24 +460,169 @@ Table: 價目表 {#tbl:價目表}
 
 [end]: ./images/calculator/End.png {#fig:駱駝}
 </t>
-<t tx="leo.20190101193619.1">拆解物件集合
+<t tx="leo.20190101193619.1">設計與繪圖
 ===
 @others
 </t>
-<t tx="leo.20190101193619.2">![Divide](./images/2.png "Divide")
+<t tx="leo.20190101193619.2">零組件尺寸分析
 
-先點選要拆解的物件，點選左上的Edit→Grouping/Merging→Divide...這樣就能把物件拆成個別的物件了。
+手足球場地
 
-![reference_to_XYZ](./images/3.png "reference_to_XYZ")
+1.球門及場地的大小，參考網路上標準場地的尺寸來做設計。但由於在模擬時發現球門前的球員動作距離有限,球容易卡在死角,最後決定將球門牆壁加厚
 
-選取剛剛拆解的全部物件，點選左上的Edit→Reorient bounding box→with reference of world這樣物件們就會全部對齊了。!!!
+![ 球場](./images/球門尺寸21.png "球場"){width=500px}
 
-</t>
-<t tx="leo.20190608170843.1">設計與繪圖
+
+
+2.球員跟竿子尺寸，參考網路上標準的尺寸來做設計。但竿子的長度有做調整，方便模擬
+球員如圖3.1   竿子如圖3.2
+
+![ ](./images/球員12.png ""){width=500px height=450px}
+
+![ ](./images/竿子12.png "竿"){width=500px }
+
+3.軌道最終版
+
+由於我們的擊球系統過於強大，會讓球從舊版軌道直接飛出去，所以才把軌道上面封起來，變成最終版
+
+
+軌道如圖3.3
+
+![ ](./images/新軌12.png ""){width=500px }
+
+4.擊球系統
+配合軌道使用如圖3.4
+
+![ ](./images/555.PNG ""){width=500px }
+
+5.導球球門
+球進之後，將球導到擊球系統，出並沿著軌道回到場上
+
+如圖3.5
+
+![ ](./images/30678.PNG ""){width=500px }
+
+
+
+
+
+
+
+
+
+
+
+參數設計與繪圖
+
+手足球系統的零組件參數設計與繪圖 (零組件初步設計繪圖)
+
+Onshape 零組件連結
+
+【機構設計】
+
+〈初始設計〉
+
+初始設計挑出了選多方案，如:
+
+1.桿件推送
+
+2.螺旋尺上推
+
+3.打擊軌道
+
+![ ](./images/初步設計一.PNG ""){width=500px}
+
+最後挑選打擊裝置搭配配斜面軌道的方式將球送出。
+
+因只需一次做動就可完成目標。
+
+〈軌道設計〉
+
+![ ](./images/初步設計.PNG ""){width=500px}
+
+最初設計是想將兩條軌道集合一束，用一次打擊就可，
+
+但後來發現會有收束誤差與繪製上的困難，後來還是改
+
+為左右各開一條軌道，後來還是改為左右各開一條軌道
+
+並各自擁有一打擊裝置。
+
+最後採用複斜面旋轉軌道，將球送至最高點後，再使用斜面將球滾落。
+
+![軌道 ](./images/三.png "軌道"){width=500px}
+
+
+
+
+〈打擊機構設計〉
+
+![打擊機構設計 ](./images/初步設計四.png "打擊機構設計"){width=500px}
+
+打擊機構非常直覺，就是使用一個帶緣圓棒將球打擊出去，
+
+並外掛置打擊區旁，作為球之動力。
+
+〈集球門〉
+
+原先的設計，發現組裝後門框的高度沒有高於球門，怕會出現卡球的可能所以要重新畫，而假如球快速的撞擊檔板可能會造成球直接反彈並有可能回到場地內，就把球檯加高3英吋，在檔板的部分畫成密閉式以防球會跑出去
+
+![集球門 ](./images/擷取5111.png "集球門"){width=500px}
+.
+.
+
+
+
+
+細部設計與 BOM
+
+各零件圖 BOM
+
+![球場](./images/球場666.PNG "球場"){width=500px}
+
+![球員](./images/球員666.png "球員"){width=500px}
+
+![軌道](./images/軌道66366.png "軌道"){width=500px}
+
+![導球球門](./images/導球球門666.png "導球球門"){width=500px}
+
+![擊球系統](./images/擊球系統666.png "擊球系統"){width=500px}
+
+![場地組合](./images/場地組合6366.png "場地組合"){width=500px}
+
+![組合圖 BOM](./images/bom12.png "組合圖 BOM"){width=500px}</t>
+<t tx="leo.20190608170843.1">V-rep 動態模擬
 ===
 @others
 </t>
-<t tx="leo.20190608170843.2">零組件尺寸分析
+<t tx="leo.20190608170843.2">送球機構設計與模擬
+
+手足球發球與進球後自動送球機構設計與 V-rep 動態模擬 (機構與傳動系統設計與模擬)
+
+可採用螺旋機構或多連桿機構設計, 透過進球感測器感應後, 將儲存於螺桿上的球送回球檯.
+
+以下為參考機構模擬影片:
+
+系統功能展示
+
+
+
+改寫code=python to lua並簡化
+
+優點:
+
+python : 可執行運算值較大的編譯
+
+lua : Vrep內部沿用 , 延遲現象較少
+
+缺點:
+
+python : 會有爆ping問題導致延遲
+
+lua : 太多運算時直接停止
+
+![回擊系統模擬](./images/tfootball.gif "回擊系統模擬")
+
 </t>
 <t tx="leo1.20171221090811.1"></t>
 <t tx="leo1.20171221090839.1"></t>
@@ -512,7 +657,7 @@ chapter_list = " ".join("./paragraph/" + i for i in [
 # 若系統並未正確轉檔, 可以將 os.system 改為 g.es 表示要使用 Leo Editor 的 global 物件中的 echo string 將指令印在 log 區
 # 然後複製指令, 然後在命令列視窗中的 markdown 目錄中執行, 就可以得到錯誤訊息
 # 或許可以再從 https://stackoverflow.com/questions/26005583/return-value-of-x-os-system 中的建議改進此一指令
-g.es(os.system("pandoc cover_and_abstract.md " + chapter_list + " reference.md -o ../pdf/report2.pdf {}".format(settingFlag)))
+g.es(os.system("pandoc cover_and_abstract.md " + chapter_list + " reference.md -o ../pdf/report.pdf {}".format(settingFlag)))
 g.es("pandoc cover_and_abstract.md " + chapter_list + " reference.md -o ../pdf/report.pdf {}".format(settingFlag))
 g.es("PDF 轉換完畢")
 g.es('-'*12)</t>
@@ -542,19 +687,26 @@ g.es('-'*12)</t>
      
 
 </t>
-<t tx="leo1.20171221091031.11">導入物件
+<t tx="leo1.20171221091031.11">執行規劃
 ===
 @others
 </t>
-<t tx="leo1.20171221091031.12">![transform-to-stl](./images/05.png "transform-to-stl"){width=250px height=250px}
+<t tx="leo1.20171221091031.12">執行規劃為每週安排任務，計畫通常趕不上變化，而變化通常趕不上長官的一句話:
 
-如下圖顯示先將要的圖檔轉.stl檔案格式，圖中是利用Onshape繪製所以拿來當範例，先組合好後對下方組合圖的標籤按右鍵並點選Export，選好格式改好檔名後按下OK就轉好了。
+W11 - 開會討論工作分配以及之後各週目標。
 
-![import](./images/1.png "import"){width=250px height=250px}
+W12 - 利用Onshape 設計並將各零件及場地繪製完成並導出、簡化導出圖檔。
 
-進入V-rep程式內並點選左上的File→Import→Mesh...後選擇要編譯的stl檔就能好了。
+W13 - 利用Onshape 設計並將各零件及場地繪製完成並導出、利用Lua測試並完成手足球1對1回擊。
 
- 
+W14 - 於Vrep設定回球機構、利用Lua測試並完成手足球玩家對電腦。
+
+W15 - 結合全部物件測試&amp;修改
+
+W16 - 整理並開始編輯個人網站&amp;小組網站&amp;PDF&amp;影片。
+
+W17 - 在課堂上進行分組報告。
+
 
 </t>
 <t tx="leo1.20171221091031.4"></t>
