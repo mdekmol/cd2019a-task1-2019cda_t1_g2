@@ -88,8 +88,9 @@ Created by [AG2](https://mdekmol.github.io/cd2019a-task1-2019cda_t1_g2/content/i
 <t tx="leo.20180902120523.12">&lt;font size="20"&gt; 期末簡報內容&lt;/font&gt;
 &lt;div style="text-align:center"&gt;
 &lt;font size="8"&gt;
-* 手足球各部設計與分析
-* V-rep 模擬及程式碼
+手足球各部設計與分析&lt;br&gt;
+
+V-rep 模擬及程式碼&lt;br&gt;
 &lt;/font&gt;&lt;/div&gt;
 </t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
@@ -111,9 +112,11 @@ Created by [AG2](https://mdekmol.github.io/cd2019a-task1-2019cda_t1_g2/content/i
 <t tx="leo.20180902120523.15">&lt;font size="20"&gt; 專案執行內容&lt;/font&gt;
 &lt;div style="text-align:center"&gt;
 &lt;font size="5"&gt;
-設計與繪圖 (40623133、40623142、40623145、40623146、40623218 )
-程式、V-rep模擬 ( 40623130、40623115、40623139、40423136 )
-期末簡報、PDF製作 (40623133、40423130、40623139 )
+設計與繪圖 (40623133、40623142、40623145、40623146、40623218 )&lt;br&gt;
+
+程式、V-rep模擬 ( 40623130、40623115、40623139、40423136 )&lt;br&gt;
+
+期末簡報、PDF製作 (40623133、40423130、40623139 )&lt;br&gt;
 &lt;/font&gt;&lt;/div&gt;</t>
 <t tx="leo.20180902120523.16">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -129,21 +132,21 @@ Created by [AG2](https://mdekmol.github.io/cd2019a-task1-2019cda_t1_g2/content/i
 <t tx="leo.20180902120523.17">&lt;font size="20"&gt; 專案執行規劃&lt;/font&gt;
 &lt;div style="text-align:justify"&gt;
 &lt;font size="5"&gt;
-執行規劃為每週安排任務，計畫通常趕不上變化，而變化通常趕不上長官的一句話:
+執行規劃為每週安排任務，計畫通常趕不上變化，而變化通常趕不上長官的一句話:&lt;br&gt;
 
-W11 - 開會討論工作分配以及之後各週目標。
+W11 - 開會討論工作分配以及之後各週目標。&lt;br&gt;
 
-W12 - 利用Onshape 設計並將各零件及場地繪製完成並導出、簡化導出圖檔。
+W12 - 利用Onshape 設計並將各零件及場地繪製完成並導出、簡化導出圖檔。&lt;br&gt;
 
-W13 - 利用Onshape 設計並將各零件及場地繪製完成並導出、利用Lua測試並完成手足球1對1回擊。
+W13 - 利用Onshape 設計並將各零件及場地繪製完成並導出、利用Lua測試並完成手足球1對1回擊。&lt;br&gt;
 
-W14 - 於Vrep設定回球機構、利用Lua測試並完成手足球玩家對電腦。
+W14 - 於Vrep設定回球機構、利用Lua測試並完成手足球玩家對電腦。&lt;br&gt;
 
-W15 - 結合全部物件測試及修改
+W15 - 結合全部物件測試及修改&lt;br&gt;
 
-W16 - 整理並開始編輯個人網站、小組網站、PDF、影片。
+W16 - 整理並開始編輯個人網站、小組網站、PDF、影片。&lt;br&gt;
 
-W17 - 在課堂上進行分組報告。
+W17 - 在課堂上進行分組報告。&lt;br&gt;
 &lt;/font&gt;&lt;/div&gt;
 
 
@@ -338,7 +341,6 @@ vertical: body pane on the botton</t>
 <t tx="leo.20190610003150.3">&lt;font size="20"&gt; 球場&lt;/font&gt;
 
 
-&lt;/font&gt;&lt;/div&gt;
 &lt;img src="https://mdekmol.github.io/cd2019a-task1-2019cda_t1_g2/images/%E7%90%83%E9%96%80%E5%B0%BA%E5%AF%B82.png" width="516" height="259"&gt;
 
 </t>
@@ -356,8 +358,6 @@ vertical: body pane on the botton</t>
 <t tx="leo.20190610003150.5">&lt;font size="20"&gt; 球員&lt;/font&gt;
 
 
-
-
 &lt;img src="https://mdekmol.github.io/cd2019a-task1-2019cda_t1_g2/images/%E7%90%83%E5%93%A1.PNG" width="407" height="545"&gt;
 
 </t>
@@ -373,9 +373,6 @@ vertical: body pane on the botton</t>
 						
 </t>
 <t tx="leo.20190610003245.2">&lt;font size="20"&gt; 回球機構&lt;/font&gt;
-&lt;div style="text-align:left"&gt;
-&lt;font size="5"&gt;
-
 
 &lt;img src="https://scontent.frmq1-1.fna.fbcdn.net/v/t1.15752-9/62594837_2547367261949496_2670933646193459200_n.png?_nc_cat=101&amp;_nc_ht=scontent.frmq1-1.fna&amp;oh=06097f5756817a0ba3b188f1643df7ff&amp;oe=5D8BA206" width="576" height="290.4"&gt;
 
@@ -393,9 +390,11 @@ vertical: body pane on the botton</t>
 &lt;/section&gt;
 </t>
 <t tx="leo.20190610010123.3">&lt;font size="20"&gt;V-rep 動態模擬&lt;/font&gt;
+&lt;div style="text-align:justify"&gt;
+&lt;font size="5"&gt;
 [重新編排碰撞關係、回球程式更新](https://www.youtube.com/watch?v=HpKoChBwPaw)
 
-</t>
+&lt;/font&gt;&lt;/div&gt;</t>
 <t tx="leo.20190610010123.4">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -409,8 +408,10 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20190610010123.5">
 &lt;font size="20"&gt;系統功能展示&lt;/font&gt;
+&lt;div style="text-align:justify"&gt;
+&lt;font size="5"&gt;
 [人機對決](https://mdekmol.github.io/cd2019a-task1-2019cda_t1_g2/content/%E7%B3%BB%E7%B5%B1%E5%8A%9F%E8%83%BD%E5%B1%95%E7%A4%BA.html)
-
+&lt;/font&gt;&lt;/div&gt;
 </t>
 </tnodes>
 </leo_file>
