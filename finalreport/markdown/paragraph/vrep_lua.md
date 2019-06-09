@@ -208,7 +208,7 @@ function sysCall_actuation() 則比較像是個無線循環的大型函式庫
 
 reborn-ball-count-goal()也是外拉的函式集，與下方的C-K-B-X2&3&4()一樣，但裏頭的編譯很不一樣...
 
-![Final-9](./vrep/FTB-Final-9.png "FTB-Final-9")
+![Final-9](./vrep/FTB-Final-9.png "FTB-Final-9"){width=500px height=600px}
 
 \newpage
 
