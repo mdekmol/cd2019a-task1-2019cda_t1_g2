@@ -21,21 +21,29 @@
 <v t="leo.20180902120523.6" a="E"><vh>body</vh>
 <v t="leo.20180902120523.7" a="E"><vh>reveal div</vh>
 <v t="leo.20180902120523.8" a="E"><vh>slides div</vh>
-<v t="leo.20180902120523.9" a="E"><vh>封面投影片</vh>
+<v t="leo.20180902120523.9"><vh>封面投影片</vh>
 <v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20180902120523.11" a="E"><vh>快捷鍵</vh>
-<v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
+<v t="leo.20180902120523.11"><vh>期末簡報內容</vh>
+<v t="leo.20180902120523.12"><vh>期末簡報內容</vh></v>
 </v>
-<v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
-<v t="leo.20180902120523.14" a="E"><vh>導入數學符號與方程式</vh>
-<v t="leo.20180902120523.15"><vh>LaTeX 格式方程式</vh></v>
+<v t="leo.20180902120523.13"><vh>執行</vh>
+<v t="leo.20180902120523.14"><vh>專案執行內容</vh>
+<v t="leo.20180902120523.15"><vh>專案執行內容</vh></v>
 </v>
-<v t="leo.20180902120523.16" a="E"><vh>導入縮排程式碼</vh>
-<v t="leo.20180902120523.17"><vh>引用程式碼</vh></v>
+<v t="leo.20180902120523.16"><vh>執行規劃</vh>
+<v t="leo.20180902120523.17"><vh>執行規劃</vh></v>
 </v>
-<v t="leo.20180902120523.18" a="E"><vh>導入影片</vh>
-<v t="leo.20180902120523.19"><vh>iframe 導入影片</vh></v>
+</v>
+<v t="leo.20190610003150.1" a="E"><vh>各部零件介紹</vh>
+<v t="leo.20190610003150.2" a="E"><vh>專案執行內容</vh>
+<v t="leo.20190610003150.3"><vh>球場</vh></v>
+</v>
+<v t="leo.20190610003150.4" a="E"><vh>執行規劃</vh>
+<v t="leo.20190610003150.5"><vh>球員</vh></v>
+</v>
+<v t="leo.20190610003245.1" a="E"><vh>執行規劃</vh>
+<v t="leo.20190610003245.2"><vh>回球機構</vh></v>
 </v>
 </v>
 </v>
@@ -48,15 +56,15 @@
 </vnodes>
 <tnodes>
 <t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.10">## 產品協同設計課程
+<t tx="leo.20180902120523.10">## 2019 SPRING產品協同設計課程
 
 
 
 &lt;small&gt;
-Created by [Team 2](http://lab.kmol.info/)
+Created by [AG2](https://mdekmol.github.io/cd2019a-task1-2019cda_t1_g2/content/index.html)
 &lt;/small&gt;
 
-[CMSimfly 網誌](./../blog/index.html)
+[倉儲](https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g2)
 
 
 </t>
@@ -69,14 +77,10 @@ Created by [Team 2](http://lab.kmol.info/)
 
 						
 </t>
-<t tx="leo.20180902120523.12"># 投影片快捷鍵
+<t tx="leo.20180902120523.12"># 期末簡報內容
 
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+* 手足球各部設計與分析
+* V-rep 模擬及程式碼
 
 </t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
@@ -95,13 +99,13 @@ Created by [Team 2](http://lab.kmol.info/)
 
 						
 </t>
-<t tx="leo.20180902120523.15"># 數學符號與方程式
+<t tx="leo.20180902120523.15"># 專案執行內容
 
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
+設計與繪圖 (40623133、40623142、40623145、40623146、40623218 )
 
-$$I = \int \rho R^{2} dV$$
-</t>
+程式、V-rep模擬 ( 40623130、40623115、40623139、40423136 )
+
+期末簡報、PDF製作 (40623133、40423130、40623139 )</t>
 <t tx="leo.20180902120523.16">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -113,49 +117,24 @@ $$I = \int \rho R^{2} dV$$
 
 						
 </t>
-<t tx="leo.20180902120523.17">## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-@language python
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
-
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
-</t>
-<t tx="leo.20180902120523.18">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
+<t tx="leo.20180902120523.17"># 專案執行規劃
 
 
-						
-</t>
-<t tx="leo.20180902120523.19">## 使用 iframe 導入影片
+執行規劃為每週安排任務，計畫通常趕不上變化，而變化通常趕不上長官的一句話:
 
-### 導入影片 template
+W11 - 開會討論工作分配以及之後各週目標。
 
-&lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-</t>
+W12 - 利用Onshape 設計並將各零件及場地繪製完成並導出、簡化導出圖檔。
+
+W13 - 利用Onshape 設計並將各零件及場地繪製完成並導出、利用Lua測試並完成手足球1對1回擊。
+
+W14 - 於Vrep設定回球機構、利用Lua測試並完成手足球玩家對電腦。
+
+W15 - 結合全部物件測試及修改
+
+W16 - 整理並開始編輯個人網站、小組網站、PDF、影片。
+
+W17 - 在課堂上進行分組報告。</t>
 <t tx="leo.20180902120523.2"></t>
 <t tx="leo.20180902120523.3">@language xml
 @tabwidth -4
@@ -326,5 +305,54 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="leo.20180902120538.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
+<t tx="leo.20190610003150.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+</t>
+<t tx="leo.20190610003150.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20190610003150.3"># 球場
+
+&lt;img src="https://mdekmol.github.io/cd2019a-task1-2019cda_t1_g2/images/%E7%90%83%E9%96%80%E5%B0%BA%E5%AF%B82.png" width="600" height="500"&gt;</t>
+<t tx="leo.20190610003150.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20190610003150.5"># 球員
+
+
+&lt;img src="https://mdekmol.github.io/cd2019a-task1-2019cda_t1_g2/images/%E7%90%83%E5%93%A1.PNG" width="600" height="500"&gt;</t>
+<t tx="leo.20190610003245.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20190610003245.2"># 回球機構
+
+
+&lt;img src="https://scontent.frmq1-1.fna.fbcdn.net/v/t1.15752-9/62594837_2547367261949496_2670933646193459200_n.png?_nc_cat=101&amp;_nc_ht=scontent.frmq1-1.fna&amp;oh=06097f5756817a0ba3b188f1643df7ff&amp;oe=5D8BA206" width="600" height="500"&gt;</t>
 </tnodes>
 </leo_file>
