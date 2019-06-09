@@ -390,8 +390,8 @@ vertical: body pane on the botton</t>
 &lt;/section&gt;
 </t>
 <t tx="leo.20190610010123.3">&lt;font size="20"&gt;V-rep 動態模擬&lt;/font&gt;
-&lt;div style="text-align:justify"&gt;
-&lt;font size="5"&gt;
+&lt;div style="text-align:center"&gt;
+&lt;font size="10"&gt;
 [重新編排碰撞關係、回球程式更新](https://www.youtube.com/watch?v=HpKoChBwPaw)
 
 &lt;/font&gt;&lt;/div&gt;</t>
@@ -408,8 +408,8 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20190610010123.5">
 &lt;font size="20"&gt;系統功能展示&lt;/font&gt;
-&lt;div style="text-align:justify"&gt;
-&lt;font size="5"&gt;
+&lt;div style="text-align:center"&gt;
+&lt;font size="10"&gt;
 [人機對決](https://mdekmol.github.io/cd2019a-task1-2019cda_t1_g2/content/%E7%B3%BB%E7%B5%B1%E5%8A%9F%E8%83%BD%E5%B1%95%E7%A4%BA.html)
 &lt;/font&gt;&lt;/div&gt;
 </t>
