@@ -1,60 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by Leo: http://leoeditor.com/leo_toc.html -->
 <leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" >
-<leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
-<globals body_outline_ratio="0.5" body_secondary_ratio="0.5">
-	<global_window_position top="50" left="50" height="500" width="700"/>
-	<global_log_window_position top="0" left="0" height="0" width="0"/>
-</globals>
+<leo_header file_format="2"/>
+<globals/>
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="leo.20171122223841.1" a="E"><vh>@settings</vh>
+<v t="leo.20171122223841.1"><vh>@settings</vh>
 <v t="leo.20171122223841.2"><vh>@data qt-gui-plugin-style-sheet</vh></v>
 <v t="leo.20171122223841.3"><vh>@string initial_split_orientation = horizontal</vh></v>
 </v>
-<v t="leo.20171122224051.1" a="E"><vh>有關本專案</vh>
+<v t="leo.20171122224051.1"><vh>有關本專案</vh>
 <v t="leo.20171122224436.1"><vh>PyQt5 官方程式碼</vh></v>
 </v>
 <v t="leo.20171122224218.1"><vh>目錄規劃</vh></v>
 <v t="leo1.20171221090839.1"><vh>Fossil SCM 內容</vh></v>
-<v t="leo1.20171221090811.1" a="E"><vh>期末報告編寫</vh>
+<v t="leo1.20171221090811.1"><vh>期末報告編寫</vh>
 <v t="leo1.20171221090921.1"><vh>@button Report pdf</vh></v>
-<v t="leo1.20171221090954.1" a="E"><vh>@path ./..</vh>
-<v t="leo1.20171221091031.1" a="E"><vh>@path markdown</vh>
+<v t="leo1.20171221090954.1"><vh>@path ./..</vh>
+<v t="leo1.20171221091031.1"><vh>@path markdown</vh>
 <v t="leo1.20171221091031.2"><vh>@edit reference.md</vh></v>
 <v t="leo1.20171221091031.3"><vh>@edit refer.bib</vh></v>
-<v t="leo1.20171221091031.4" a="E"><vh>封面以及摘要</vh>
+<v t="leo1.20171221091031.4"><vh>封面以及摘要</vh>
 <v t="leo1.20171221091031.5"><vh>@clean cover_and_abstract.md</vh>
 <v t="leo1.20171221091031.6"><vh>摘要</vh></v>
 </v>
 </v>
-<v t="leo1.20171221091031.7" a="E"><vh>各章節內容</vh>
-<v t="leo1.20171221091031.8" a="E"><vh>@path paragraph</vh>
-<v t="leo1.20171221091031.9" a="E"><vh>@clean introduction.md</vh>
+<v t="leo1.20171221091031.7"><vh>各章節內容</vh>
+<v t="leo1.20171221091031.8"><vh>@path paragraph</vh>
+<v t="leo1.20171221091031.9"><vh>@clean introduction.md</vh>
 <v t="leo1.20171221091031.10"><vh>前言內容</vh></v>
 </v>
-<v t="leo1.20171221091031.11" a="E"><vh>@clean import.md</vh>
+<v t="leo1.20171221091031.11"><vh>@clean import.md</vh>
 <v t="leo1.20171221091031.12"><vh>執行規劃</vh></v>
 </v>
-<v t="leo.20190101193619.1" a="E"><vh>@clean demolit.md</vh>
+<v t="leo.20190101193619.1"><vh>@clean demolit.md</vh>
 <v t="leo.20190101193619.2"><vh>設計與繪圖</vh></v>
 </v>
-<v t="leo.20190608170843.1" a="E"><vh>@clean des.md</vh>
-<v t="leo.20190608170843.2"><vh>V-rep 動態模擬</vh></v>
+<v t="leo.20190609152245.1"><vh>@clean vrep_lua.md</vh>
+<v t="leo.20190609152245.2"><vh>V-rep 動態模擬</vh></v>
 </v>
 </v>
 </v>
 </v>
 </v>
 </v>
-<v t="leo.20180110233617.1" a="E"><vh>Recovered Nodes</vh>
+<v t="leo.20180110233617.1"><vh>Recovered Nodes</vh>
 <v t="leo.20180110233617.2"><vh>Recovered node "摘要" from @clean cover_and_abstract.md</vh>
 <v t="leo.20180110233617.3"><vh>old:摘要</vh></v>
 <v t="leo.20180110233617.4"><vh>new:摘要</vh></v>
 </v>
 </v>
-<v t="leo.20180111013609.2" a="E"><vh>Recovered Nodes</vh>
+<v t="leo.20180111013609.2"><vh>Recovered Nodes</vh>
 <v t="leo.20180111013609.3"><vh>Recovered node "計算機程式內容" from @clean calculator.md</vh>
 <v t="leo.20180111013609.4"><vh>old:計算機程式內容</vh></v>
 <v t="leo.20180111013609.5"><vh>new:計算機程式內容</vh></v>
@@ -596,39 +593,11 @@ Onshape 零組件連結
 ![組合圖 BOM](./images/bom12.png "組合圖 BOM"){width=500px}
 
 </t>
-<t tx="leo.20190608170843.1">V-rep 動態模擬
+<t tx="leo.20190609152245.1">V-rep 動態模擬
 ===
 @others
 </t>
-<t tx="leo.20190608170843.2">送球機構設計與模擬
-
-手足球發球與進球後自動送球機構設計與 V-rep 動態模擬 (機構與傳動系統設計與模擬)
-
-可採用螺旋機構或多連桿機構設計, 透過進球感測器感應後, 將儲存於螺桿上的球送回球檯.
-
-以下為參考機構模擬影片:
-
-系統功能展示
-
-
-
-改寫code=python to lua並簡化
-
-優點:
-
-python : 可執行運算值較大的編譯
-
-lua : Vrep內部沿用 , 延遲現象較少
-
-缺點:
-
-python : 會有爆ping問題導致延遲
-
-lua : 太多運算時直接停止
-
-![回擊系統模擬](./images/tfootball.gif "回擊系統模擬")
-
-</t>
+<t tx="leo.20190609152245.2"></t>
 <t tx="leo1.20171221090811.1"></t>
 <t tx="leo1.20171221090839.1"></t>
 <t tx="leo1.20171221090921.1">@language python
@@ -656,7 +625,7 @@ chapter_list = " ".join("./paragraph/" + i for i in [
 "introduction.md",
 "import.md", 
 "demolit.md",
-"des.md"
+"vrep_lua.md"
 ])
 
 # 若系統並未正確轉檔, 可以將 os.system 改為 g.es 表示要使用 Leo Editor 的 global 物件中的 echo string 將指令印在 log 區
