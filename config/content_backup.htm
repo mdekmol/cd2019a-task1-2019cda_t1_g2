@@ -196,7 +196,7 @@
 <p>以文字及操作影片說明如何從 Onshape 設計繪製零組件後, 如何轉入 V-rep, 如何編寫程式, 如何進行各種功能測試, 最後完成手足球的 V-rep 動態模擬系統.</p>
 <h2>送球機構設計與模擬</h2>
 <p><span>由於當初設計不量沒考慮周到導致距離太遠及斜度太過另外球含有很0.75的彈性係數，這導致球根本上不去有時還飛出軌道...我想到的解決方法是加上蓋子以及在球於軌道中時寫個判斷式讓球傳送到離洞口較近的下坡，想不到球一開始就過不了洞，之後又寫了個讓球能滾出去的code，這是偷吃步的方法也是利用程式輔助機構的方法，雖然很不真實但確實可行。</span></p>
-<p><span></span></p>
+<p><img alt="" height="564" src="/images/FTB(14).gif" width="1000"/></p>
 <p><span>下方這段是個簡單的判別式:當球的X&gt;0.905同時Y&lt;-0.069又同時Z&lt;0.036時，推球的機構往前push，第二段也是同理只是相反邊，而第三段則是當球的Z方向數值大於0.036時兩者回到初始位置。</span></p>
 <pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">function reborn_ball_count_goal()
 
@@ -234,6 +234,7 @@ end</pre>
 <p></p>
 <p></p>
 <p></p><h2>系統功能展示</h2>
+<p></p>
 <p><a href="https://mdecadp2018.github.io/site-40623130/content/Vrep%E6%89%8B%E8%B6%B3%E7%90%83-All_Version.html">這裡紀載了全部的手足球版本以及詳細歷程</a></p>
 <h4>人機對決</h4>
 <p>最終版本的'玩家與電腦'對打，完整code</p>
@@ -999,7 +1000,16 @@ end</pre>
 <p><img src="/images/FTB_attention%20(8).png"/></p>
 <p>理解這個需要一點邏輯...如果不懂就照勾選吧...</p>
 <p>T4.<span>運行時建議 先點一下烏龜 太快會增加電腦能力也有機率bug</span></p>
-<p><img src="/images/FTB_attention%20(13).png"/></p><h1>結案報告</h1>
+<p><img src="/images/FTB_attention%20(13).png"/></p>
+<p>Q5.怎麼不用python寫??</p>
+<p>A5.我會選擇使用Vrep內嵌的Lua編寫的原因</p>
+<p>優點:</p>
+<p>python : 可執行運算值較大的編譯、可加外部其他的程式合用</p>
+<p>lua : Vrep內部沿用 , 延遲現象較少、編譯很方便</p>
+<p><span>缺點:</span></p>
+<p>python : 會有爆ping問題導致延遲、產生很多衝突可能性高</p>
+<p>lua : 太多運算時直接停止、內部函式限制多</p>
+<p>目前體會到的優缺點大概就這樣，而且感覺我們班大部分的人都是用<span>python 寫，所以我想用少數人用的lua。</span></p><h1>結案報告</h1>
 <h2>專案口頭簡報</h2>
 <p>各組利用倉儲中的 Reveal.js 進行結案簡報 (結案口頭簡報)</p>
 <h2>專案報告書</h2>
